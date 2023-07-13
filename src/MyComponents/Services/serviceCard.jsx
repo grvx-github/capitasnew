@@ -3,7 +3,7 @@ import { Col } from "react-bootstrap";
 
 export const ServiceCard = (props) => {
   return (
-    <Col xs={12} md={4} lg={3}>
+    <div className="col-lg-4 col-sm-12">
       <div className="serviceCard">
         <div className="serviceCardItems">
           <div className="serviceCardIcon">{props.icon}</div>
@@ -20,7 +20,7 @@ export const ServiceCard = (props) => {
           </div>
         </div>
       </div>
-    </Col>
+    </div>
   );
 };
 export default ServiceCard;

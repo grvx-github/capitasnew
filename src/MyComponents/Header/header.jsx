@@ -8,24 +8,7 @@ import "./header.css";
 import React, { useEffect, useState } from "react";
 
 const Header = () => {
-  const [navbarBackground, setNavbarBackground] = useState("transparent");
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const heroSection = document.getElementById("hero");
-      if (heroSection) {
-        const heroSectionHeight = heroSection.offsetHeight;
-        const isBelowHeroSection = window.scrollY > heroSectionHeight;
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener on unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  
 
   return (
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
