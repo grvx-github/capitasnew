@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 import "./portfolio.css";
 import PortfolioData from "../../portfoliodata";
+import { sliderSettings } from "../../common";
+
 
 const Portfolio = () => {
   // useEffect(() => {
@@ -18,7 +20,7 @@ const Portfolio = () => {
       <h2>Our Portfolio</h2>
       <div className="container-fluid">
         <div className="row">
-          <Swiper>
+          <Swiper {...sliderSettings}>
             {PortfolioData.map((card, index) => {
 							return (
                 <SwiperSlide key={index}>
