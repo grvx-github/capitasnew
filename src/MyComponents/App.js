@@ -3,6 +3,7 @@ import Hero from './Hero/hero';
 import About from './About/about';
 import Services from "./Services/services";
 import Portfolio from "./Portfolio/Portfolio";
+import Testimonials from "./Testimonials/testimonials";
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <About/>
       <Services/>
       <Portfolio/>
+      <Testimonials/>
     </div>
   );
 }
